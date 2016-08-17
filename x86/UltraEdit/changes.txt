@@ -1,0 +1,29 @@
+Changes for the latest release include:
+
+        - Secure FTP Support (SFTP)
+        - CSE HTML Validator integration:
+          - Run Validation
+          - Setup Validator Options and Configuration
+          - Job Type support
+          * Requires CSE HTML Validator from www.htmlvalidator.com
+        - Syntax Highlighting based on file name
+        - Project additions include:
+          - Suport for nested groups with no limit on depth
+          - Directories allowed as a group
+          - Directory groups dynamically updated
+          - Direct addition/removal of files from File Tree View
+        - FTP Dropdown for recent directories/per account
+        - Function to close all files but active file added to File Menu and File Tab right click menu
+        - Macro command additions:
+          - IfFTP to check if file is an FTP file
+          - IfCharGt to check if character is greater than value
+          - IfColNumGt to check if column number is greater than value
+        - User tool ability to pass the line and column of the cursor to tool
+        - Syntax Highlighting allows delimiters to be start character of word
+        - Support for OEM Fixed Font selection
+        - Preserve Case Replace to preserve the case of a word when being replaced
+        - Option for CHM user help files to always be on top, or not
+        - File Tree View remembers horizontal scroll position between sessions
+        - Many additional configuration items for user preferences
+        - INI Settings moved to configuration
+        - Other minor changes

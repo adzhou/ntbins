@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Evernote\Evernote\evernote.exe" /DebugMenu

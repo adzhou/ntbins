@@ -1,0 +1,176 @@
+[Strings]
+AppID={43B6667D-7520-4186-B05B-F5C0494C495D}
+AdminRights=
+1=Uninstall UltraEdit-32
+2=Installation package not found in selected folder.
+3=You need to have administrative rights on this computer to uninstall or repair this application.
+10=Removing file %s
+11=Removing registry entry %s
+12=Removing registry key %s
+13=Removing ini parameter from file %s
+14=Removing shortcut %s
+15=Removing folder %s
+16=Unregistering server %s
+17=Unregistering font %s
+18=Checking shared file %s
+19=Removing assembly %s
+20=Removing environment variable %s
+
+[Display]
+Charset=0
+ForceRemoveDataFiles=
+DialogFont=
+TitleFont=Arial,12,$000000,B
+SubtitleFont=
+ProgressColor=
+ShowTitle=
+ShowSubtitle=
+
+[Dialog.DLG_START]
+Caption=Uninstall Program for UltraEdit-32
+101=< Back
+102=Next >
+103=Cancel
+104=Ghost Installer Maintenance mode
+105=Please select one of the following options below.
+106=Uninstall UltraEdit-32
+107=Repair UltraEdit-32
+109=Select this option to remove UltraEdit-32 and all its components from your computer.
+110=Select this option to repair UltraEdit-32. This option will reinstall the program with exactly the same components that were installed first time.
+
+[Dialog.DLG_BEFOREUNINSTALL]
+Caption=Uninstall Program for UltraEdit-32
+Title=Uninstall for UltraEdit-32
+Subtitle=This program will remove UltraEdit-32 and all its components from this computer.
+101=< Back
+102=Next >
+103=Cancel
+104=Are you sure you want to completely remove the UltraEdit-32 and all its components from your computer?||||To confirm the removal process press Next button.||||WARNING!  Be careful the uninstaller may also delete UltraEdit-32 settings and data directories. Please backup the data which is stored in subdirectories of UltraEdit-32.
+105=Remove data files and folders created by UltraEdit-32
+
+[Dialog.DLG_UNINSTALL]
+Caption=Uninstall Program for UltraEdit-32
+Title=Uninstall Progress
+Subtitle=
+101=< Back
+102=Next >
+103=Cancel
+104=Uninstall actions proceeded:
+200=Preparing uninstall
+201=Uninstalling shortcuts
+202=Uninstalling registry entries
+203=Unregistering fonts
+204=Unregistering COM servers
+205=Removing files and folders
+206=Finishing uninstall
+
+[Dialog.DLG_UNINSTALLSUCCEEDED]
+Caption=Uninstall Program for UltraEdit-32
+Title=Uninstall Succeeded
+Subtitle=
+102=Finish
+104=Ghost Installer successfully removed UltraEdit-32 and all its components from your computer.||||||Click on the Finish dialog button to exit the uninstallation process.
+
+[Dialog.DLG_BEFOREREPAIR]
+Caption=Uninstall Program for UltraEdit-32
+Title=Repair for UltraEdit-32
+Subtitle=This program will try to repair UltraEdit-32.
+101=< Back
+102=Next >
+103=Cancel
+104=To confirm the repair process press Next button.||||ATTENTION!  Be careful the repair process may also reset UltraEdit-32 settings. Please backup the data which is stored in subdirectories of UltraEdit-32.
+
+[Dialog.DLG_BROWSEFORSETUP]
+Caption=Uninstall Program for UltraEdit-32
+Title=Browse for Packages
+Subtitle=
+101=< Back
+102=Next >
+103=Cancel
+104=Ghost Installer Maintenance could not locate installation package for UltraEdit-32. This package is required to repair your application. Please specify a location for this package.
+105=Search for package in:
+107=Browse...
+200=Browse for Packages
+201=Select folder with installation package.
+
+[Dialog.DLG_DELSHARED]
+Caption=Remove shared file?
+101=The system indicates that the following shared file is no longer used by any programs.  If any programs are still using this file and it is removed, those programs may not function.  Are you sure you want to remove the shared file?||||Leaving this file will not harm your system.  If you are not sure what to do, it is suggested that you choose not to remove this shared component.
+103=File name:
+105=Located in:
+107=Yes
+108=Yes to all
+109=No
+110=No to all
+
+[Dialog.DLG_REBOOT]
+Caption=Uninstall Program for UltraEdit-32
+Title=Computer Restart
+Subtitle=Uninstallation procedure needs to restart your system to remove application completely.
+101=< Back
+102=Next >
+103=Cancel
+104=Some components were not removed completely. For finishing uninstallation it is necessary to reboot your computer.
+105=Yes, reboot my computer now
+106=No, I'll reboot my computer later
+
+[CopyFiles]
+C:\Program Files\UltraEdit\ue32ctmn.dl=
+C:\Program Files\UltraEdit\ssceam.tlx=
+C:\Program Files\UltraEdit\ssceam1.clx=
+C:\Program Files\UltraEdit\UEDOS32.exe=
+C:\Program Files\UltraEdit\uedit32.hlp=
+C:\Program Files\UltraEdit\uedit32.exe=
+C:\Program Files\UltraEdit\uediff.exe=
+C:\Program Files\UltraEdit\taglist.txt=
+C:\Program Files\UltraEdit\SSCE4332.DLL=
+C:\Program Files\UltraEdit\READ.ME=
+C:\Program Files\UltraEdit\ORDER.TXT=
+C:\Program Files\UltraEdit\htmltidy.dll=
+C:\Program Files\UltraEdit\Html.tlx=
+C:\Program Files\UltraEdit\CONDCORR.TLX=
+C:\Program Files\UltraEdit\AUTOCORR.TLX=
+C:\Program Files\UltraEdit\wordfile.txt=
+C:\Program Files\UltraEdit\SftpDLL.dll=
+C:\Program Files\UltraEdit\changes.txt=
+C:\Program Files\UltraEdit\ue32ctmn.dll=
+UEDIT32=
+
+[SharedFiles]
+C:\Program Files\UltraEdit\Uninstall.exe=
+
+[PreRunApp]
+0='C:\Program Files\UltraEdit\uedit32.exe','/UNINSTALLG','C:\Program Files\UltraEdit',1,'',1,0
+
+[CreateKeys]
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{43B6667D-7520-4186-B05B-F5C0494C495D}=
+HKCR\CLSID\{b5eedee0-c06e-11cf-8c56-444553540000}=
+HKCR\CLSID\{b5eedee0-c06e-11cf-8c56-444553540000}\InProcServer32=
+HKCR\*\shellex\ContextMenuHandlers\UltraEdit-32=
+HKLM\Software\Microsoft\Windows\CurrentVersion\App Paths\UEDIT32.exe=
+
+[AddReg]
+HKCR\CLSID\{b5eedee0-c06e-11cf-8c56-444553540000}\InProcServer32\''=
+HKCR\CLSID\{b5eedee0-c06e-11cf-8c56-444553540000}\InProcServer32\'ThreadingModel'=
+HKCR\*\shellex\ContextMenuHandlers\UltraEdit-32\''=
+HKLM\Software\Microsoft\Windows\CurrentVersion\App Paths\UEDIT32.exe\''=
+HKLM\Software\Microsoft\Windows\CurrentVersion\App Paths\UEDIT32.exe\'Path'=
+
+[AddIni]
+'UEDIT32','Settings','Language File'=
+
+[Shortcuts]
+C:\Users\yanchunf\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\UltraEdit-32.lnk=
+C:\Users\yanchunf\AppData\Roaming\Microsoft\Windows\Start Menu\UltraEdit-32.lnk=
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\UltraEdit\UltraEdit-32 Text Editor.lnk=
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\UltraEdit\UltraEdit-32 Help.lnk=
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\UltraEdit\UltraEdit-32 Read Me.lnk=
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\UltraEdit\UltraEdit-32 Order Form.lnk=
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\UltraEdit\UltraEdit-32 Uninstall.lnk=
+
+[CreateDirs]
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\UltraEdit=
+
+[EnvVars]
+Path=1,C:\Program Files\UltraEdit
+

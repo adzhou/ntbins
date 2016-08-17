@@ -1,0 +1,79 @@
+<silentsettings activeinstalltype="{4CBC9648-4C37-41C3-8AA7-18C86B9B0655}">
+	<features>
+		<feature id="{2710DBE3-A229-445D-933F-4FB37E19DE13}"/>
+		<feature id="{586AFE65-BA0A-4819-9AB3-4EFD85F474FE}"/>
+		<feature id="{E90A835E-9603-4638-8406-2F4FE27BC2F0}"/>
+		<feature id="{48B20154-E406-497F-A553-EE08ED73723E}"/>
+		<feature id="{00C3C70F-BE34-4A2B-AF1D-BC1E7A947B3D}"/>
+		<feature id="{C1869FA9-D2B6-4CC7-BDF0-1A7D5F99E99C}"/>
+		<feature id="{5840F696-CA16-4BD5-9545-9143B545C543}"/>
+		<feature id="{E67EE2D2-1D3F-4E98-BFC9-E7E80E23F410}"/>
+	</features>
+	<variables>
+		<var name="ProgramGroup" value="UltraEdit"/>
+		<var name="AppFolder" value="%ProgramsMenu%\%ProgramGroup%"/>
+		<var name="InstallPath" value="C:\Program Files\UltraEdit"/>
+		<var defvalue="%ProgramFiles%\UltraEdit" name="UltraEditRegistryPath" regkey="HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\UEDIT32.EXE" regparam="Path" type="reg"/>
+		<var name="InputFilesLocation" value="..\release\"/>
+		<var name="InputPresetupFiles" value=".\presetup files\"/>
+		<var name="ProdGUID" value="b5eedee0-c06e-11cf-8c56-444553540000"/>
+		<var name="WORDFILE" value="wordfile.txt"/>
+		<var name="ProdFileINI" value="%Windows%\%ProdFile%.INI"/>
+		<var name="ProdFile" value="UEDIT32"/>
+		<var name="TAGLIST" value="taglist.txt"/>
+		<var name="ImportOldPathVar" regkey="HKCU\Environment" regparam="Path" type="reg"/>
+		<var condition="FeatureEnabled ('{C1869FA9-D2B6-4CC7-BDF0-1A7D5F99E99C}') and HasAdminRights" flags="add_path,sys_envvar" name="Path" value="%InstallPath%" type="envvar"/>
+		<var name="UninstallTitleFont" value="Arial,12,$000000,B"/>
+		<var name="PackageLocationPath" value="/ue32install"/>
+		<var name="HostName" value="www.ultraedit.com"/>
+		<var name="HostNameAlternate" value="www.idmcomp.com"/>
+		<var condition="%LangID%='ENU'" name="NormInstDescription" value="Installs %AppName% files locally on your computer"/>
+		<var condition="(ActiveInstallType='{4CBC9648-4C37-41C3-8AA7-18C86B9B0655}' or ActiveInstallType='{067E6A39-DC70-4510-BCB9-35A8160244F7}') and %LangID%='ENU'" name="FOLDERNAME" value="Destination Directory"/>
+		<var condition="(ActiveInstallType='{4CBC9648-4C37-41C3-8AA7-18C86B9B0655}' or ActiveInstallType='{067E6A39-DC70-4510-BCB9-35A8160244F7}') and %LangID%='ENU'" name="FolderName_small" value="destination directory"/>
+		<var condition="(ActiveInstallType='{4CBC9648-4C37-41C3-8AA7-18C86B9B0655}' or ActiveInstallType='{067E6A39-DC70-4510-BCB9-35A8160244F7}') and %LangID%='ENU'" name="FOLDERDESC" value="Select the %FolderName_small% where you want to install %AppName%. To install to a different location, click Browse, and select another folder."/>
+		<var condition="%LangID%='ENU'" name="QuickLaunchDesc" value="Adds %AppName% shortcut to the quick launch bar"/>
+		<var condition="%LangID%='ENU'" name="DeskDescr" value="Adds %AppName% shortcut to the desktop"/>
+		<var condition="%LangID%='ENU'" name="ShortcutDesc" value="Adds %AppName% shortcut to the start menu"/>
+		<var condition="%LangID%='ENU'" name="RightMouseDesc" value="Adds %AppName% to the right mouse button menu"/>
+		<var condition="%LangID%='ENU'" name="AddToPathDesc" value="Adds %AppName% executable to path environment."/>
+		<var condition="%LangID%='ENU'" name="DictsDesc" value="Installs international dictionaries into your system"/>
+		<var condition="%LangID%='ENU'" name="ToNetworkInstDesc" value="Installs %AppName% for future network installations"/>
+		<var condition="%LangID%='ENU'" name="FromNetworkInstallDesc" value="Installs %AppName% from the network"/>
+		<var condition="%LangID%='ENU'" name="NormInstName" value="Normal Installation"/>
+		<var condition="%LangID%='ENU'" name="ToNetInstName" value="To Network"/>
+		<var condition="%LangID%='ENU'" name="FromNetInstName" value="From Network"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesName" value="UltraEdit-32 Program Files"/>
+		<var condition="%LangID%='ENU'" name="QuickLaunchName" value="Quick Launch Bar shortcut"/>
+		<var condition="%LangID%='ENU'" name="DeskName" value="Desktop shortcut"/>
+		<var condition="%LangID%='ENU'" name="ShortcutName" value="Start Menu Shortcut"/>
+		<var condition="%LangID%='ENU'" name="RightMouseName" value="Add %AppName% to right mouse button"/>
+		<var condition="%LangID%='ENU'" name="AddToPathName" value="Add %AppName% to path environment variable."/>
+		<var condition="%LangID%='ENU'" name="DictsName" value="Dictionaries"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesNameENG" value="UltraEdit-32 English program files"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesNameFRA" value="UltraEdit-32 French program files"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesNameDEU" value="UltraEdit-32 German program files"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesNameESN" value="UltraEdit-32 Spanish program files"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesNameKOR" value="UltraEdit-32 Korean program files"/>
+		<var condition="%LangID%='ENU'" name="EngDict" value="British english dictionary"/>
+		<var condition="%LangID%='ENU'" name="EnuDict" value="American english dictionary"/>
+		<var condition="%LangID%='ENU'" name="NldDict" value="Dutch dictionary"/>
+		<var condition="%LangID%='ENU'" name="FinDict" value="Finnish dictionary"/>
+		<var condition="%LangID%='ENU'" name="DeuDict" value="Deutsch dictionary"/>
+		<var condition="%LangID%='ENU'" name="FraDict" value="French dictionary"/>
+		<var condition="%LangID%='ENU'" name="ItaDict" value="Italian dictionary"/>
+		<var condition="%LangID%='ENU'" name="EsnDict" value="Spanish dictionary"/>
+		<var condition="%LangID%='ENU'" name="HunDict" value="Hungarian dictionary"/>
+		<var condition="%LangID%='ENU'" name="SveDict" value="Swedish dictionary"/>
+		<var condition="%LangID%='ENU'" name="ProgName" value="Program files"/>
+		<var condition="%LangID%='ENU'" name="ProgDesc" value="Installs %AppName% program files onto your computer"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesDescENG" value="Copies main %AppName% program files in english language"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesDescFRA" value="Copies main %AppName% program files in french language"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesDescDEU" value="Copies main %AppName% program files in german language"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesDescESN" value="Copies main %AppName% program files in spanish language"/>
+		<var condition="%LangID%='ENU'" name="ProgFilesDescKOR" value="Copies main %AppName% program files in korean language"/>
+		<var condition="%LangID%='ENU'" name="ShowChangesDesc" value="Show latest changes?"/>
+		<var name="InputFilesLocationDict" value="j:\ssce"/>
+		<var name="UEGroup" value="UltraEdit"/>
+		<var name="LangID" value="ENU"/>
+	</variables>
+</silentsettings>
